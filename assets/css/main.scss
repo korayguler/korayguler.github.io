@@ -367,6 +367,15 @@ section {
 }
 
 @media (max-width: 576px) {
+
+  .btn {
+    width: fit-content;
+    padding: 0.5rem .6rem;
+    border-radius: 0.3rem;
+    margin: 0.2rem;
+    font-size: .9rem;
+  }
+
   .about {
     width: 100% !important;
     height: auto !important;
@@ -378,8 +387,31 @@ section {
       flex-direction: column !important;
     }
 
+    .profile {
+      margin-left: 1rem!important;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        font-size: 1.25rem;
+        font-weight: 300;
+        color: white;
+      }
+      h1 {
+        font-weight: 700;
+        color: white;
+        font-size: 3rem!important;
+      }
+      p {
+        font-size: 1rem;
+        color: white;
+      }
+      .contact {
+        margin-top: 1.5rem;
+      }
+    }
     .profile-image {
-      margin-left: 3rem;
+      margin-left: 1rem;
       margin-bottom: 2rem;
       width: 10rem !important;
       height: 10rem !important;
@@ -393,6 +425,7 @@ section {
       }
     }
   }
+
 
   section {
     .skills {
@@ -430,22 +463,70 @@ section {
     display: grid;
     grid-template-columns: auto !important;
     grid-gap: 1rem;
-    margin-left: 3rem;
+    margin: auto !important;
+    padding:1.2rem;
     .project-card {
-      margin-left: 2rem;
-      margin-right: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
       border-radius: 0.4rem;
       transition: 350ms all;
       position: relative;
     }
   }
+  footer{
+    font-size:.8rem;
+  }
+  nav {
+    height: 3rem;
+    background: var(--blue-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    transition: 300ms all;
+    margin-bottom: 1rem;
+
+    .container{
+      justify-content: center!important;
+    }
+  .navlink {
+    text-decoration: none;
+    color: white;
+    font-size: .8em!important;
+    height: 3rem;
+    padding-right: 0rem!important;
+    padding-left: 0rem!important;
+    padding-top: 1rem;
+    padding-bottom: 1.04rem;
+    transition: 200ms all;}
+  
+  }
+  .social {
+    display: none!important;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem!important;
+    height: 3rem;
+
+    a {
+      line-height: 3rem;
+      margin-left: 1rem;
+      transition: 350ms all;
+      color: white;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
 }
 
 footer {
   display: flex;
   justify-content: center;
-  padding: 3rem;
+  padding: 5rem;
   background: var(--dark-blue-color);
   a {
     color: white;
