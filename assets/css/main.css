@@ -289,6 +289,8 @@ section .project .project-card {
   -webkit-transition: 350ms all;
   transition: 350ms all;
   position: relative;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
 }
 
 section .project .project-card:hover {
@@ -317,6 +319,7 @@ section .project .project-card .cover {
   opacity: 0;
   -webkit-transition: 350ms all;
   transition: 350ms all;
+  border-radius: 0.4rem;
 }
 
 section .project .project-card .cover a {
@@ -337,6 +340,8 @@ section .project .project-card .cover a:hover {
 }
 
 section .project .project-card div img {
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
   width: 100%;
 }
 
@@ -562,8 +567,8 @@ section .project .project-card h3 {
     padding: 1.2rem;
   }
   .project .project-card {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0.4rem;

@@ -234,6 +234,8 @@ section {
       border-radius: 0.4rem;
       transition: 350ms all;
       position: relative;
+      border-radius: 0.4rem;
+      margin-bottom: 2rem;
       &:hover {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
         .cover {
@@ -250,7 +252,7 @@ section {
         justify-content: space-evenly;
         opacity: 0;
         transition: 350ms all;
-
+        border-radius: 0.4rem;
         a {
           z-index: 5;
           color: white;
@@ -268,6 +270,9 @@ section {
       }
       div {
         img {
+          border-top-left-radius: 0.4rem;
+          border-top-right-radius: 0.4rem;
+
           width: 100%;
         }
       }
@@ -466,8 +471,9 @@ section {
     margin: auto !important;
     padding:1.2rem;
     .project-card {
-      margin-left: 1rem;
-      margin-right: 1rem;
+      
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
       border-radius: 0.4rem;
       transition: 350ms all;
