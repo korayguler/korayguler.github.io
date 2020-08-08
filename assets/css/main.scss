@@ -190,11 +190,10 @@ section {
       margin: 2.5rem;
       position: relative;
       background: white;
-      display: flex;
-      flex-direction: column;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      padding: 3rem 3rem 2rem;
+      padding: 3rem 3rem;
       border-radius: 0.4rem;
+      height: fit-content;
       div {
         position: absolute;
         right: 1rem;
