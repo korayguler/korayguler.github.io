@@ -14,10 +14,7 @@ const portfolio = () => {
       template += `
         <!--card_start-->
         <div class="card">
-          <img src="${
-            folder +
-            (e.image !== '' || e.image !== undefined ? e.image : 'null.jpg')
-          }" />
+          <img src="${folder + e.image}" />
           <span class="name">${e.name}</span>
           <div class="tags">
            

@@ -1,7 +1,7 @@
 [
   {
     "name": "Pinterest clone with React",
-    "image": "pinterest-clone.jpg",
+    "image": "pinterest-react.jpg",
     "live": "https://pinterest-react.vercel.app/",
     "source": "https://github.com/korayguler/pinterest-clone",
     "tech": ["reactjs", "nextjs", "js", "scss"]
