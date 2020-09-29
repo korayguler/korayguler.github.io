@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap');
+:root {
+  --f-18: 18px;
+  --f-16: 16px;
+  --f-14: 14px;
+
+  --c-light: #fff;
+  --c-dark: #242526;
+  --c-gray: #303236;
+  --c-gray-light: #3d4045;
+
+  --animate: 350ms;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+body {
+  background-color: var(--c-gray);
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: var(--c-dark);
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.card .name {
+  font-size: var(--f-18);
+  color: var(--c-light);
+  font-weight: 500;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.card .tags {
+  height: auto;
+}
+.card .tags span {
+  background-color: var(--c-light);
+  color: var(--c-gray);
+  padding: 2px 4px;
+  font-size: var(--f-14);
+  margin-right: 3px;
+  border-radius: 6px;
+}
+.card .tags span:last-child {
+  margin-right: 0;
+}
+.card .url {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  width: 100%;
+}
+.btn {
+  background-color: var(--c-gray);
+  margin: 0 7px;
+  color: var(--c-light);
+  font-size: var(--f-16);
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 40px;
+  padding: 0 10px;
+  font-weight: 200;
+  transition: var(--animate) all;
+}
+.btn-hover:hover {
+  background-color: var(--c-light);
+  color: var(--c-gray-light);
+}
+
+.btn-disable {
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+.disable:hover {
+  cursor: not-allowed;
+  background-color: var(--c-gray-light);
+  color: var(--c-light);
+}

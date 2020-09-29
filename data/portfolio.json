@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Live Exchange",
+    "image": "images/portfolio/live-exchange.jpg",
+    "live": "https://korayguler.github.io/live-exchange/",
+    "source": "https://github.com/korayguler/live-exchange",
+    "tech": ["html", "css", "js"]
+  },
+  {
+    "name": "Basic todo list app",
+    "image": "images/basic-todo.jpg",
+    "live": "https://korayguler.github.io/basic-todo/",
+    "source": "https://github.com/korayguler/basic-todo",
+    "tech": ["html", "css", "js", "Bootstrap"]
+  },
+  {
+    "name": "Simple Portfolio UI",
+    "image": "images/simple-portfolio-ui.jpg",
+    "live": "https://korayguler.github.io/simple-portfolio-ui/",
+    "source": "https://github.com/korayguler/simple-portfolio-ui",
+    "tech": ["html", "scss"]
+  },
+  {
+    "name": "Alivio Landing Page UI",
+    "image": "images/portfolio/alivio-landing-page-ui.jpg",
+    "live": "https://korayguler.github.io/alivio-landing-page-ui/",
+    "source": "https://github.com/korayguler/alivio-landing-page-ui",
+    "tech": ["html", "scss", "js"]
+  }
+]
