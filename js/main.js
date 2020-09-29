@@ -6,15 +6,14 @@ const portfolio = () => {
     .catch((err) => console.log(err));
 
   const create = (data) => {
-    const folder =
-      'https://raw.githubusercontent.com/korayguler/korayguler.github.io/master/images/portfolio/';
+    const folder = 'https://korayguler.github.io/images/portfolio/';
 
     let template = '';
     data.forEach((e) => {
       template += `
         <!--card_start-->
         <div class="card">
-          <img src="${folder + e.image}" />
+          <img src="${folder + e.image}"loading="lazy" />
           <span class="name">${e.name}</span>
           <div class="tags">
            

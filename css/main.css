@@ -8,8 +8,8 @@
   --c-dark: #242526;
   --c-gray: #303236;
   --c-gray-light: #3d4045;
-
-  --animate: 350ms;
+  --c-aqua: aqua;
+  --animate: 250ms;
 
   --border-rad: 15px;
 }
@@ -21,11 +21,13 @@
 }
 body {
   background-color: var(--c-gray);
-  transition: var(--animate) all;
 }
 a {
   text-decoration: none;
+  color: var(--c-light);
+  transition: var(--animate) color;
 }
+
 .header {
   width: 100%;
   height: 60px;
@@ -49,13 +51,23 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer a,
+span {
+  color: var(--c-light);
+}
+.footer a:hover {
+  color: var(--c-aqua);
 }
 .nav {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .nav a {
   color: var(--c-light);
@@ -64,12 +76,16 @@ a {
 .logo {
   display: flex;
   align-items: center;
-  font-weight: 200;
+  justify-content: center;
+  font-weight: 300;
 }
-.logo span {
+.logo a {
   padding-left: 15px;
   font-size: 24px;
   color: var(--c-light);
+}
+.logo a:hover {
+  color: var(--c-aqua);
 }
 .helpers {
   display: flex;
@@ -93,6 +109,32 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
+}
+.showcase {
+  background-color: var(--c-dark);
+  color: var(--c-light);
+  border-radius: var(--border-rad);
+  padding: 45px;
+}
+.showcase .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr;
+}
+.showcase .profile img {
+  margin-right: 30px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 999px;
+}
+.showcase .profile div .connect {
+  margin-top: 15px;
+  margin-left: -20px;
+  display: flex;
+}
+.showcase .profile div p {
+  font-size: var(--f-18);
 }
 .card {
   padding: 15px;
@@ -152,7 +194,7 @@ a {
   border-radius: 40px;
   padding: 0 10px;
   font-weight: 200;
-  transition: var(--animate) all;
+  transition: var(--animate);
 }
 .btn-hover:hover {
   background-color: var(--c-light);
@@ -167,4 +209,7 @@ a {
   cursor: not-allowed;
   background-color: var(--c-gray-light);
   color: var(--c-light);
+}
+.social a:hover {
+  color: var(--c-aqua);
 }
