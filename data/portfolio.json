@@ -1,30 +1,51 @@
 [
   {
+    "name": "Pinterest clone with React",
+    "image": "pinterest-clone.jpg",
+    "live": "https://pinterest-react.vercel.app/",
+    "source": "https://github.com/korayguler/pinterest-clone",
+    "tech": ["reactjs", "nextjs", "js", "scss"]
+  },
+  {
     "name": "Live Exchange",
-    "image": "images/portfolio/live-exchange.jpg",
+    "image": "live-exchange.jpg",
     "live": "https://korayguler.github.io/live-exchange/",
     "source": "https://github.com/korayguler/live-exchange",
     "tech": ["html", "css", "js"]
   },
   {
     "name": "Basic todo list app",
-    "image": "images/basic-todo.jpg",
+    "image": "basic-todo.jpg",
     "live": "https://korayguler.github.io/basic-todo/",
     "source": "https://github.com/korayguler/basic-todo",
     "tech": ["html", "css", "js", "Bootstrap"]
   },
   {
     "name": "Simple Portfolio UI",
-    "image": "images/simple-portfolio-ui.jpg",
+    "image": "simple-portfolio-ui.jpg",
     "live": "https://korayguler.github.io/simple-portfolio-ui/",
     "source": "https://github.com/korayguler/simple-portfolio-ui",
     "tech": ["html", "scss"]
   },
   {
     "name": "Alivio Landing Page UI",
-    "image": "images/portfolio/alivio-landing-page-ui.jpg",
+    "image": "alivio-landing-page-ui.jpg",
     "live": "https://korayguler.github.io/alivio-landing-page-ui/",
     "source": "https://github.com/korayguler/alivio-landing-page-ui",
     "tech": ["html", "scss", "js"]
+  },
+  {
+    "name": "Taskly Web UI",
+    "image": "taskly-web-ui.jpg",
+    "live": "https://korayguler.github.io/taskly-web-ui/",
+    "source": "https://github.com/korayguler/taskly-web-ui",
+    "tech": ["html", "scss"]
+  },
+  {
+    "name": "Cultural Heritage Protection",
+    "image": "cultural-heritage.jpg",
+    "live": "",
+    "source": "https://github.com/korayguler/cultural-heritage",
+    "tech": ["html", "css", "bootstrap", "php", "mysql"]
   }
 ]

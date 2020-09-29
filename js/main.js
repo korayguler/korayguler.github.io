@@ -6,22 +6,31 @@ const portfolio = () => {
     .catch((err) => console.log(err));
 
   const create = (data) => {
-    console.log(data);
+    const folder =
+      'https://raw.githubusercontent.com/korayguler/korayguler.github.io/master/images/portfolio/';
+
     let template = '';
     data.forEach((e) => {
-      console.log(data.image);
       template += `
         <!--card_start-->
         <div class="card">
-          <img src="${data.img}" />
-          <span class="name">${data.name}</span>
+          <img src="${
+            folder +
+            (e.image !== '' || e.image !== undefined ? e.image : 'null.jpg')
+          }" />
+          <span class="name">${e.name}</span>
           <div class="tags">
-            <span>html</span> <span>css</span> <span>JavaScriopt</span>
-            <span>Bootstrap</span>
+           
+        ${e.tech.map((el) => `<span>${el}</span>`).join('')}
+        
           </div>
           <div class="url">
-            <a class="btn btn-hover" href="${data.source}">Source</a>
-            <a class="btn btn-hover" href="${data.live}">Preview</a>
+            <a class="btn btn-hover" href="${
+              e.source
+            }" target="_blank">Source</a>
+            <a class="btn ${e.live === '' ? 'disable' : 'btn-hover'}" href="${
+        e.live
+      }" ${e.live === '' ? '' : 'target="_blank"'}>Preview</a>
           </div>
         </div>
         <!--card_end-->

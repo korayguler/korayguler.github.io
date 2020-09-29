@@ -10,6 +10,8 @@
   --c-gray-light: #3d4045;
 
   --animate: 350ms;
+
+  --border-rad: 15px;
 }
 * {
   margin: 0;
@@ -19,25 +21,84 @@
 }
 body {
   background-color: var(--c-gray);
+  transition: var(--animate) all;
 }
 a {
   text-decoration: none;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--c-dark);
+  border-radius: var(--border-rad);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: var(--c-dark);
+  border-radius: var(--border-rad);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  z-index: 99;
+}
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav a {
+  color: var(--c-light);
+  font-size: var(--f-18);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+}
+.logo span {
+  padding-left: 15px;
+  font-size: 24px;
+  color: var(--c-light);
+}
+.helpers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-light);
+}
+.helpers .social {
+  font-size: 24px;
+}
+.helpers .social * {
+  margin-right: 10px;
 }
 .container {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 15px;
 }
 .card {
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
+  border-radius: var(--border-rad);
   background-color: var(--c-dark);
   align-items: center;
   position: relative;
@@ -45,7 +106,7 @@ a {
 }
 .card img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: var(--border-rad);
   object-fit: cover;
 }
 .card .name {
@@ -61,9 +122,9 @@ a {
 .card .tags span {
   background-color: var(--c-light);
   color: var(--c-gray);
-  padding: 2px 4px;
+  padding: 3px 5px;
   font-size: var(--f-14);
-  margin-right: 3px;
+  margin-right: 5px;
   border-radius: 6px;
 }
 .card .tags span:last-child {
@@ -84,6 +145,7 @@ a {
   color: var(--c-light);
   font-size: var(--f-16);
   height: 40px;
+  min-width: 100px;
   align-items: center;
   justify-content: center;
   display: flex;
