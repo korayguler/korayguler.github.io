@@ -30,16 +30,16 @@ a {
 
 .header {
   width: 100%;
-  height: 60px;
   background-color: var(--c-dark);
   border-radius: var(--border-rad);
   margin-top: 10px;
-  margin-bottom: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   position: sticky;
   top: 0;
   z-index: 99;
+  min-height: 60px;
 }
 .footer {
   width: 100%;
@@ -68,13 +68,14 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .nav a {
   color: var(--c-light);
   font-size: var(--f-18);
 }
 .logo {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   font-weight: 300;
@@ -88,12 +89,13 @@ span {
   color: var(--c-aqua);
 }
 .helpers {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   color: var(--c-light);
 }
 .helpers .social {
+  display: none;
   font-size: 24px;
 }
 .helpers .social * {
@@ -104,36 +106,59 @@ span {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 15px;
+  margin-top: 30px;
 }
-.showcase {
+.section:first-child {
+}
+.section {
   background-color: var(--c-dark);
   color: var(--c-light);
   border-radius: var(--border-rad);
   padding: 45px;
+  margin-top: 30px;
+
+  position: relative;
 }
-.showcase .profile {
+.section .title {
+  font-weight: 200;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: var(--c-gray-light);
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: var(--f-18);
+  user-select: none;
+}
+.section .profile {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
 }
-.showcase .profile img {
-  margin-right: 30px;
+.section .profile img {
   max-width: 200px;
   max-height: 200px;
   border-radius: 999px;
 }
-.showcase .profile div .connect {
+.section .profile div .connect {
   margin-top: 15px;
   margin-left: -20px;
   display: flex;
+  justify-content: center;
 }
-.showcase .profile div p {
+.section .profile div p {
   font-size: var(--f-18);
 }
 .card {
