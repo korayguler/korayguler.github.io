@@ -143,8 +143,7 @@ span {
   grid-gap: 15px;
   margin-top: 30px;
 }
-.section:first-child {
-}
+
 .section {
   background-color: var(--c-dark);
   color: var(--c-light);
