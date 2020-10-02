@@ -6,6 +6,9 @@
   .nav {
     flex-direction: row;
   }
+  .nav a:last-child {
+    display: flex;
+  }
 }
 @media only screen and (min-width: 614px) {
   .header {

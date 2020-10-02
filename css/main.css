@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap');
-:root {
-  --f-18: 18px;
-  --f-16: 16px;
-  --f-14: 14px;
 
-  --c-light: #fff;
-  --c-dark: #242526;
-  --c-gray: #303236;
-  --c-gray-light: #3d4045;
-  --c-aqua: aqua;
-  --animate: 250ms;
-
-  --border-rad: 15px;
-}
 * {
   margin: 0;
   padding: 0;
@@ -20,25 +7,60 @@
   font-family: 'Mulish', sans-serif;
 }
 body {
+  --f-18: 18px;
+  --f-16: 16px;
+  --f-14: 14px;
+  --c-light: #fff;
+  --c-dark: #242526;
+  --c-gray: #303236;
+  --c-gray-light: #3d4045;
+  --c-aqua: #72efdd;
+  --animate: 250ms;
+  --border-rad: 15px;
+
   background-color: var(--c-gray);
+  transition: var(--animate) ease-in-out;
+}
+
+body.light {
+  --c-light: #242526;
+  --c-dark: #f8f9fa;
+  --c-gray: #e1e5f2;
+  --c-gray-light: #f8f9fa;
+  --c-aqua: rebeccapurple;
 }
 a {
   text-decoration: none;
   color: var(--c-light);
   transition: var(--animate) color;
 }
-
+.theme {
+  font-size: var(--f-18);
+  border-radius: 99px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--animate) all;
+  border: 1px solid var(--c-light);
+}
+.theme:hover {
+  color: var(--c-dark);
+  background-color: var(--c-light);
+}
 .header {
   width: 100%;
   background-color: var(--c-dark);
   border-radius: var(--border-rad);
   margin-top: 10px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   position: sticky;
   top: 0;
   z-index: 99;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.04);
   min-height: 60px;
 }
 .footer {
@@ -53,6 +75,8 @@ a {
   z-index: 99;
   display: flex;
   align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.04);
+
   justify-content: center;
 }
 .footer a,
@@ -68,11 +92,14 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 .nav a {
   color: var(--c-light);
   font-size: var(--f-18);
+}
+.nav a:last-child {
+  display: none;
 }
 .logo {
   display: none;
@@ -124,7 +151,7 @@ span {
   border-radius: var(--border-rad);
   padding: 45px;
   margin-top: 30px;
-
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.04);
   position: relative;
 }
 .section .title {
@@ -133,7 +160,8 @@ span {
   top: -15px;
   left: 50%;
   transform: translateX(-50%);
-
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.08);
+  z-index: 5;
   background-color: var(--c-gray-light);
   padding: 4px 8px;
   border-radius: 8px;
@@ -170,6 +198,7 @@ span {
   align-items: center;
   position: relative;
   user-select: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.04);
 }
 .card img {
   width: 100%;
@@ -218,11 +247,11 @@ span {
   display: flex;
   border-radius: 40px;
   padding: 0 10px;
-  font-weight: 200;
+  font-weight: 300;
   transition: var(--animate);
 }
 .btn-hover:hover {
-  background-color: var(--c-light);
+  background-color: var(--c-aqua);
   color: var(--c-gray-light);
 }
 

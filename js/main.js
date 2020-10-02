@@ -1,4 +1,6 @@
-const portfolio = () => {
+const themeButton = document.querySelector('.theme');
+themeButton.addEventListener('click', theme);
+(function portfolio() {
   const portfolioArea = document.querySelector('[data-portfolio]');
   fetch('../data/portfolio.json')
     .then((res) => res.json())
@@ -35,5 +37,13 @@ const portfolio = () => {
     });
     portfolioArea.innerHTML = template;
   };
-};
-portfolio();
+})();
+
+function theme() {
+  document.body.classList.toggle('light');
+  localStorage.setItem('theme', document.body.classList);
+}
+
+if (localStorage.getItem('theme') !== null) {
+  document.body.classList.add(localStorage.getItem('theme'));
+}
