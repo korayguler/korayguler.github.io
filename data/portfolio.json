@@ -11,41 +11,48 @@
     "image": "live-exchange.jpg",
     "live": "https://korayguler.github.io/live-exchange/",
     "source": "https://github.com/korayguler/live-exchange",
-    "tech": ["html", "css", "js"]
+    "tech": ["css", "js"]
   },
   {
     "name": "Basic todo list app",
     "image": "basic-todo.jpg",
     "live": "https://korayguler.github.io/basic-todo/",
     "source": "https://github.com/korayguler/basic-todo",
-    "tech": ["html", "css", "js", "Bootstrap"]
+    "tech": ["css", "js", "Bootstrap"]
+  },
+  {
+    "name": "Genesis Portfolio Template",
+    "image": "genesis-portfolio-template.jpg",
+    "live": "https://korayguler.github.io/genesis-portfolio-template/",
+    "source": "https://github.com/korayguler/genesis-portfolio-template",
+    "tech": ["scss", "js"]
   },
   {
     "name": "Simple Portfolio UI",
     "image": "simple-portfolio-ui.jpg",
     "live": "https://korayguler.github.io/simple-portfolio-ui/",
     "source": "https://github.com/korayguler/simple-portfolio-ui",
-    "tech": ["html", "scss"]
+    "tech": ["scss"]
   },
   {
     "name": "Alivio Landing Page UI",
     "image": "alivio-landing-page-ui.jpg",
     "live": "https://korayguler.github.io/alivio-landing-page-ui/",
     "source": "https://github.com/korayguler/alivio-landing-page-ui",
-    "tech": ["html", "scss", "js"]
+    "tech": ["scss", "js"]
   },
   {
     "name": "Taskly Web UI",
     "image": "taskly-web-ui.jpg",
     "live": "https://korayguler.github.io/taskly-web-ui/",
     "source": "https://github.com/korayguler/taskly-web-ui",
-    "tech": ["html", "scss"]
+    "tech": ["scss"]
   },
   {
     "name": "Cultural Heritage Protection",
     "image": "cultural-heritage.jpg",
     "live": "",
     "source": "https://github.com/korayguler/cultural-heritage",
-    "tech": ["html", "css", "bootstrap", "php", "mysql"]
+    "tech": ["css", "bootstrap", "php", "mysql"]
   }
 ]
