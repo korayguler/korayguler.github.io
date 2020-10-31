@@ -21,6 +21,13 @@
     "tech": ["css", "js", "Bootstrap"]
   },
   {
+    "name": "New Year Countdown Timer",
+    "image": "new-year-countdown.jpg",
+    "live": "https://korayguler.github.io/new-year-countdown/",
+    "source": "https://github.com/korayguler/new-year-countdown",
+    "tech": ["scss", "js"]
+  },
+  {
     "name": "Genesis Portfolio Template",
     "image": "genesis-portfolio-template.jpg",
     "live": "https://korayguler.github.io/genesis-portfolio-template/",
